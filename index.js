@@ -1,7 +1,12 @@
-function imgt1 () {
-    document.getElementById("trocarimg").src="Final Fantasy.png";
-}   
+const clicouEmTrocar= (evento) =>{
+    evento.preventDefault();
 
-function imgt2 () {
-    document.getElementById("trocarimg").src="Free Fire.png";
-}   
+    let imagem2= document.getElementById('foto-feliz');
+    imagem2.src= 'É-pessimo-ser-triste-o-tempo-todo-840x720.png';
+};
+
+const iniciar = ()=> {
+    document.getElementById('troca').addEventListener('click', clicouEmTrocar);
+};
+
+document.addEventListener('DOMContentLoaded', iniciar);
